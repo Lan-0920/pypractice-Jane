@@ -1,0 +1,36 @@
+# Virtual environment
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE configurations
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+
+# Dataset directory
+/data/
+
+# Model weights and artifacts
+Saving_Path/
+*.pth
+*.pt
+*.onnx
+*.h5
+*.ckpt
+
+# Output results and CSVs
+/data/example.csv
+
+# System files
+.DS_Store
+Thumbs.db
