@@ -1,22 +1,45 @@
-# Virtual environment
+# ==========================================
+# 1. Python & Virtual Environment
+# ==========================================
 .venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# ==========================================
+# 2. Packaging & Build Distribution (Hatchling/Pip)
+# ==========================================
+build/
+bdist.*/
+dist/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.eggs/
 
-# IDE configurations
-.vscode/
-.idea/
-.project
-.pydevproject
-.settings/
+# ==========================================
+# 3. Linting, Testing & Type Checking Caches
+# ==========================================
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
 
+# ==========================================
+# 4. Project Specific Artifacts & Datasets
+# ==========================================
 # Dataset directory
 /data/
 
@@ -30,7 +53,23 @@ Saving_Path/
 
 # Output results and CSVs
 /data/example.csv
+*.csv
 
-# System files
+# ==========================================
+# 5. IDE & Operating System Files
+# ==========================================
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+.ipynb_checkpoints/
+
+# Operating system files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
