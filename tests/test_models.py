@@ -15,8 +15,8 @@ def test_vgg16_output_shape():
     dummy_input = torch.randn(1, 3, 224, 224)
     with torch.no_grad():
         output = model(dummy_input)
-    #assert output.shape[0] == 1   # batch size
-    assert output.shape[0] == 999
+    assert output.shape[0] == 1   # batch size
+    #assert output.shape[0] == 999
     assert output.shape[1] == 9   # num_classes
 
 
